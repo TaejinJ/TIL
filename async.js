@@ -1,17 +1,17 @@
 function First() {
   console.log("first");
-  niceTo();
+  Second();
 }
 function Second() {
   setTimeout(() => {
     console.log("second");
   }, 0);
-  meetYou();
+  Third();
 }
 function Third() {
   console.log("Third");
 }
-hello();
+First();
 //  result hello meetYou niceTo
 
 /**ex)  */
