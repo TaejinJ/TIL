@@ -2,14 +2,14 @@ function First() {
   console.log("first");
   niceTo();
 }
-function second() {
+function Second() {
   setTimeout(() => {
-    console.log("niceTo");
+    console.log("second");
   }, 0);
   meetYou();
 }
-function meetYou() {
-  console.log("meetYou");
+function Third() {
+  console.log("Third");
 }
 hello();
 //  result hello meetYou niceTo
