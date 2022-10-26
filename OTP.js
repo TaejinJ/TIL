@@ -7,5 +7,5 @@ function otpgenerator(a) {
   }
   return OTP;
 }
-console.log(otpgenerator(13));
-console.log(otpgenerator(6));
+console.log(otpgenerator(13)); // u5zLgR8QLgty7
+console.log(otpgenerator(6)); // 0bXH73
