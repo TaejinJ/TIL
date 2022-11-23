@@ -15,4 +15,4 @@ function twoSum(numbers, target) {
 
 }
 
-twoSum([1, 2, 3, 4, 5], 3);
+twoSum([1, 2, 3, 4, 5], 3); // [0,1]
