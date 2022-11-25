@@ -24,6 +24,9 @@ function twoSum(numbers, target) {
 
 }
 
+
+
+
 /**map을 사용 한 코드  */
 // function twoSum(numbers, target) {
 //     let seen = new Map();
@@ -35,4 +38,7 @@ function twoSum(numbers, target) {
 //     }
 // }
 
+
 twoSum([1, 2, 3, 4, 5], 3);
+
+twoSum([1, 2, 3, 4, 5], 3); // [0,1]
