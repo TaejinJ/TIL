@@ -15,6 +15,7 @@ Examples
 "[({})](]" =>  False*/
 
 function validBraces(braces) {
+  // matches라는 객체에 키와 밸류로 구성
   var matches = { "(": ")", "{": "}", "[": "]" };
   var stack = [];
   var currentChar;
@@ -24,8 +25,11 @@ function validBraces(braces) {
 
     if (matches[currentChar]) {
       stack.push(currentChar);
+      // console.log(stack);
+      // console.log(currentChar);
     } else {
       if (currentChar !== matches[stack.pop()]) {
+        // console.log(currentChar); //안닫힌 괄호
         return false;
       }
     }
@@ -35,7 +39,9 @@ function validBraces(braces) {
 }
 
 //test
+
 console.log(validBraces("(){}[]"));
-console.log(validBraces("([{}])"));
-console.log(validBraces("(}"));
-console.log(validBraces("[({})](]"));
+console.log(validBraces("({}[]"));
+console.log(validBraces("(){]"));
+console.log(validBraces("(){}[])"));
+console.log(validBraces("(){}[]{{{"));

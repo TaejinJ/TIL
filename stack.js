@@ -21,9 +21,11 @@ class Stack {
       return false;
     }
   }
+  /**스택의 맨윗부분을 보는 메서드 */
   top() {
     return this.arr[this.arr.length - 1];
   }
+  /**스택의 제일 마지막부분 */
   bottom() {
     return this.arr[0];
   }

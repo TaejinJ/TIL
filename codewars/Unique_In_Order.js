@@ -8,18 +8,18 @@ uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 */
 
 /**내풀이 */
-function uniqueInOrder(it) {
-  var result = [];
-  var last;
-
-  for (var i = 0; i < it.length; i++) {
-    if (it[i] !== last) {
-      result.push((last = it[i]));
+var uniqueInOrder = function (iterable) {
+  var arr = [];
+  for (var i = 0; i < iterable.length; i++) {
+    // 뒤에오는 문자와 비교함
+    if (iterable[i] !== iterable[i + 1]) {
+      // 같지않으면 arr에 푸시
+      arr.push(iterable[i]);
     }
   }
 
-  return result;
-}
+  return arr;
+};
 /**Best Practice */
 // var uniqueInOrder = function (iter) {
 //   return [...iter].filter((a, i) => a !== iter[i - 1]);
