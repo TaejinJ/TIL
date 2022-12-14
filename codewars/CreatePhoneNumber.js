@@ -8,7 +8,7 @@ function createPhoneNumber(numbers) {
 
 
 }
-
+// 처음에 작성해본것과 너무 비효율적인것 같아서 위와 같이 생각해봤다.
 // function createPhoneNumber1(numbers) {
 //     return (
 //         "(" +
