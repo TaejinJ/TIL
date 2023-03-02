@@ -1,0 +1,30 @@
+function int32ToIp(int32) {
+    let binary = int32.toString(2).padStart(32,"0"),
+        binaryArray = [],
+        result = [],
+        i = 8;
+        for(let index=0; index< 4; index++){
+            binaryArray[index]=binary.slice(i - 8,i);
+            i+=8;
+            if(!binaryArray[index]){
+                binaryArray[index]="0";
+            }
+        }
+        for(let i=0; i < binaryArray.length; i++){
+            result[i]=parseInt(binaryArray[i],2);
+        }
+        return result.toString().replace(/,/g, ".");
+    
+}
+
+
+//비트연산자를 이용한 쉬운방법.
+
+// function int32ToIp(int32) {
+//     return (
+//         ((int32 >> 24) & 0xFF) + "." +
+//         ((int32 >> 16) & 0xFF) + "." +
+//         ((int32 >> 8) & 0xFF) + "." +
+//         ((int32) & 0xFF)
+//     )
+// }
