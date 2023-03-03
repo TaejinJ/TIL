@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="func">
+      <button id="normal">버튼</button>
+    </div>
+
+    <div class="ArrowFunc">
+      <button id="arrow">화살표 함수 버튼</button>
+    </div>
+  </body>
+  <script>
+    document.getElementById("normal").addEventListener("click", function (e) {
+      console.log(this);
+    });
+
+    document.getElementById("arrow").addEventListener("click", (e) => {
+      console.log(this);
+    });
+  </script>
+</html>
