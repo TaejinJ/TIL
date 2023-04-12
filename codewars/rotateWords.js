@@ -6,6 +6,9 @@
 // '', as input
 
 function rotate(string) {
+    if (string === "") {
+        return [];
+    }
     let res = [];
     let str = string;
     for (let i = 0; i < str.length; i++) {
