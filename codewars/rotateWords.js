@@ -19,4 +19,17 @@ function rotate(string) {
     return res;
 }
 
-console.log(rotate("Hello")); 
+
+// function rotate(str) {
+//     if (str === "") {
+//         return [];
+//     }
+//     const result = [str];
+//     for (let i = 1; i < str.length; i++) {
+//         result.push(result[i-1].slice(1) + result[i-1][0]);
+//        // console.log(result[i-1].slice(1),result[i-1][0])
+
+//     }
+//     return result;
+// }
+// console.log(rotate("Hello"));
