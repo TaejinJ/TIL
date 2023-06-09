@@ -7,6 +7,30 @@
     <title>Document</title>
 </head>
   <style>
+    body {
+  background-color: #fff;
+}
+.trns-text {
+  background: url(https://www.yachtandboat.com/wp-content/uploads/2018/12/hero-image-2.jpg)   -20px -20px no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* Below is not needed */
+  display:block;
+  font-size: 200px;
+  font-family: arial;
+  text-align: center;
+  margin-top: -20px;
+  font-weight: bold;
+  letter-spacing: -25px;
+  background-size: cover;
+}
+.non-trns {
+  color: #000;
+  margin-top: -200px;
+  text-align: center;
+  font-family: calibri;
+  font-size: 25px;
+}
   .background {
     background-color: black;
   }
@@ -24,5 +48,13 @@
   <h3 class="transparent">투명한 글자 </h3>
 </div>
 
+<p class="trns-text">TRANSPRENT</p>
+<p class="non-trns">The above text uses an image as it's background, giving a transparent illusion. Any image can be used.</p>
+
+<!--
+
+If you wish to use this all you need to do is copy the .trns-text css and change the image to your choice. Don't forget to copy the trns-text html or change the class.
+
+-->
 </body>
 </html>
