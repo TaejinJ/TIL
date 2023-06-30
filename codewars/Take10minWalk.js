@@ -27,6 +27,9 @@ function isValidWalk(walk) {
 function isValidWalk(walk) {
   let x = 0;
   let y = 0;
+  if(walk.length !==10) {
+    return false;
+  } 
   for (let direction of walk) {
     switch (direction) {
       case "n":
@@ -41,7 +44,7 @@ function isValidWalk(walk) {
     }
   }
   // 총 이동거리가 10이어야 함(소요시간10분) 시작지점으로 돌아왔는지 확인
-  return walk.length ===10 && x===0 && y===0;
+  return x===0 && y===0;
 }
 
 // for문으로 순회하면서 switch문으로 가독성을 늘림.
