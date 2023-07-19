@@ -25,6 +25,7 @@ function isValidWalk(walk) {
 /**풀다보니까 너무 가독성이 떨어지는거같아서 어떤방법이 있나 고민해봄. */
 
 function isValidWalk(walk) {
+  if(walk.length !==10) return false;
   let x = 0;
   let y = 0;
   for (let direction of walk) {
@@ -41,7 +42,7 @@ function isValidWalk(walk) {
     }
   }
   // 총 이동거리가 10이어야 함(소요시간10분) 시작지점으로 돌아왔는지 확인
-  return walk.length ===10 && x===0 && y===0;
+  return x===0 && y===0;
 }
 
 // for문으로 순회하면서 switch문으로 가독성을 늘림.
