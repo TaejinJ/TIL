@@ -37,9 +37,11 @@ function diamond(n) {
       const spaces = Math.abs(middleIndex - i);
       const stars = n - 2 * spaces;
   
+      
       diamondArr.push(' '.repeat(spaces) + '*'.repeat(stars) + '\n');
     }
   
+
     return diamondArr.join('');
   }
   
